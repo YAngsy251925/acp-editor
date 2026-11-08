@@ -1,0 +1,26 @@
+{
+  "name": "acp-editor",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Editor-side ACP client + agent hub. Chat, agents and models inside the editor.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter @acp-editor/hub dev",
+    "start": "pnpm --filter @acp-editor/hub start",
+    "test": "pnpm --filter @acp-editor/hub test",
+    "typecheck": "pnpm -r typecheck",
+    "demo": "node --import tsx scripts/demo-mock.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@11.21.0"
+}

@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1.0",
+	"FriendlyName": "ACP Editor",
+	"Description": "Drive any ACP agent from inside the editor. The hub runs outside the engine; this plugin is only the window.",
+	"Category": "AI",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"EnabledByDefault": false,
+	"Modules": [
+		{
+			"Name": "AcpEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"TargetAllowList": [ "Editor" ]
+		}
+	]
+}

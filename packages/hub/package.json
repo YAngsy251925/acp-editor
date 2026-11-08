@@ -1,0 +1,31 @@
+{
+  "name": "@acp-editor/hub",
+  "version": "0.1.0",
+  "description": "ACP client + HTTP/SSE hub that lets any editor front-end drive any ACP agent.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "acp-hub": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "agents.default.json"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "node --import tsx --watch src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

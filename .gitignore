@@ -1,0 +1,27 @@
+node_modules/
+dist/
+*.log
+.env
+.DS_Store
+*.tsbuildinfo
+.acp-sessions/
+
+# local development scratch: probes, verification scripts, captured logs
+build/
+
+# Unreal plugin build output
+hosts/unreal/**/Binaries/
+hosts/unreal/**/Intermediate/
+hosts/unreal/**/Saved/
+hosts/unreal/**/DerivedDataCache/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# editors
+.vscode/
+.idea/
+*.swp
